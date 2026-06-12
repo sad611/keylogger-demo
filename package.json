@@ -1,0 +1,29 @@
+{
+  "name": "keylogger-edu",
+  "version": "1.0.0",
+  "description": "Keylogger educacional (CLI) para seminário de Segurança Computacional - Cap. 6 Malware (Stallings & Brown)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "attacker": "tsx src/attacker.ts",
+    "victim": "tsx src/victim.ts",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "keylogger",
+    "educacional",
+    "seguranca",
+    "malware",
+    "demonstracao"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
