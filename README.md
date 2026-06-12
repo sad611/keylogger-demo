@@ -3,13 +3,6 @@
 Projeto de demonstração para o **Seminário de Segurança Computacional** —
 Capítulo 6 "Software Malicioso (malware)" de *Computer Security: Principles
 and Practice*, 4ª ed. (Stallings & Brown).
-
-> **Aviso legal:** Uso exclusivamente didático e autorizado. Esta ferramenta
-> captura apenas as teclas digitadas **no próprio terminal onde é executada**.
-> Ela **não** instala hooks globais no sistema operacional nem monitora outras
-> aplicações. Capturar teclas de terceiros sem consentimento é crime (no
-> Brasil, Lei 12.737/2012 — "Lei Carolina Dieckmann" — e LGPD).
-
 ---
 
 ## O que demonstra
@@ -47,26 +40,6 @@ src/
 ```bash
 npm install
 ```
-
-### Modo 1 — Log local
-
-Captura as teclas no terminal e grava um arquivo JSON ao encerrar.
-
-```bash
-# Desenvolvimento (sem build):
-npm run dev
-
-# Saída customizada:
-npm run dev -- meu-log.json
-
-# Build + execução:
-npm run build
-npm start
-```
-
-Digite algumas teclas e pressione **Ctrl+C** para encerrar. O log é
-gravado em `./logs/session-<timestamp>.json`.
-
 ---
 
 ### Modo 2 — C2 em rede (attacker + victim)
