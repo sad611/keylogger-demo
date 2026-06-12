@@ -42,7 +42,7 @@ npm install
 ```
 ---
 
-### Modo 2 — C2 em rede (attacker + victim)
+### Modo attacker + victim
 
 Simula a arquitetura real de um keylogger com exfiltração remota: o processo
 `victim` captura as teclas e as envia via TCP para o servidor `attacker`, que
@@ -91,7 +91,7 @@ npm run victim
 
 ---
 
-## Formato do log de sessão (Modo 1)
+## Formato do log de sessão
 
 ```json
 {
